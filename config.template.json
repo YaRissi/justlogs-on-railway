@@ -1,0 +1,13 @@
+{
+    "admins": "", 
+    "logsDirectory": "/data/logs", 
+    "adminAPIKey": "",
+    "username": "", 
+    "oauth": "", 
+    "botVerified": "", 
+    "clientID": "", 
+    "clientSecret": "", 
+    "logLevel": "info", 
+    "channels": "", 
+    "archive": true 
+}
