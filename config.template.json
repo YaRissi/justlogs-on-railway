@@ -1,13 +1,13 @@
 {
     "admins": "", 
-    "logsDirectory": "/data/logs", 
+    "logsDirectory": "/etc/data/logs", 
     "adminAPIKey": "",
     "username": "", 
     "oauth": "", 
     "botVerified": "", 
     "clientID": "", 
     "clientSecret": "", 
-    "logLevel": "info", 
+    "logLevel": "", 
     "channels": "", 
     "archive": true 
 }
