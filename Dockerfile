@@ -1,6 +1,6 @@
 FROM ghcr.io/gempir/justlog:latest
 
-ARG admins adminAPIKey username oauthtokenforchat botVerified mytwitchclientid myscretclientid channels
+ARG ADMINS ADMINAPIKEY USERNAME OAUTHTOKENFORCHAT BOTVERIFIED MYTWITCHCLIENTID MYSECRETCLIENTID CHANNELS LOGLEVEL
 
 USER root
 

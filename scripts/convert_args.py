@@ -21,14 +21,15 @@ def split_env_var(env_var):
     return env_var.split(",") if env_var and "," in env_var else [env_var]
 
 def convert_args(data):
-    data['admins'] = split_env_var(os.getenv('admins', ''))
-    data['adminAPIKey'] = os.getenv('adminAPIKey', '')
-    data['username'] = os.getenv('username', '')
-    data['oauth'] = os.getenv('oauthtokenforchat', '')
-    data['clientID'] = os.getenv('mytwitchclientid', '')
-    data['clientSecret'] = os.getenv('myscretclientid', '')
-    data['botVerified'] = os.getenv('botVerified', '').lower() == 'true'
-    data['channels'] = split_env_var(os.getenv('channels', ''))
+    data['admins'] = split_env_var(os.getenv('ADMINS', ''))
+    data['adminAPIKey'] = os.getenv('ADMINAPIKEY', '')
+    data['username'] = os.getenv('USERNAME', '')
+    data['oauth'] = os.getenv('OAUTHTOKENFORCHAT', '')
+    data['clientID'] = os.getenv('MYTWITCHCLIENTID', '')
+    data['clientSecret'] = os.getenv('MYSECRETCLIENTID', '')
+    data['botVerified'] = os.getenv('BOTVERIFIED', '').lower() == 'true'
+    data['logLevel'] = os.getenv('LOGLEVEL', '')
+    data['channels'] = split_env_var(os.getenv('CHANNELS', ''))
     return data
 
 if __name__ == '__main__':
