@@ -12,9 +12,6 @@ COPY scripts/convert_args.py convert_args.py
 
 RUN  python3 convert_args.py --input /etc/config.template.json --output /etc/justlog.json
 
-RUN cat /etc/justlog.json
-
-
 HEALTHCHECK CMD curl --fail http://localhost:8025 || exit 1
 
 #EXPOSE 8025
